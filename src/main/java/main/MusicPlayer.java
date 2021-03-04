@@ -10,7 +10,7 @@ public class MusicPlayer {
     private Music music;
 
     @Autowired
-    @Qualifier("classicalMusic")
+    @Qualifier("rockMusic")
     public void setMusic(Music music) {
         this.music = music;
     }
