@@ -21,11 +21,9 @@ public class Main implements CommandLineRunner {
     }
 
     @Override
-    public void run(String... args) {
-
+    public void run(ApplicationArguments args) throws Exception {
         MusicPlayer musicPlayer = (MusicPlayer) context.getBean("musicPlayer");
         musicPlayer.playMusic();
-
     }
 
 }
